@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--The below code is for the kilometer(km)-->
+        <TextView
+            android:layout_width="182dp"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/developedBy"
+            android:textColor="#000"
+            android:textSize="25sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/inputKmValue"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="70dp"
+            android:background="@drawable/insertsection"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:hint="@string/kmToMl"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:padding="20dp"
+            android:textColor="#000"
+            android:textColorHint="#AAA">
+        </EditText>
+
+        <TextView
+            android:id="@+id/viewKmToMlValue"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/viewdrawable"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_marginTop="-50dp">
+        </TextView>
+
+        <!--The below code is for the Miles(ml)-->
+        <EditText
+            android:id="@+id/inputMilesToKm"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/insertsection"
+            android:hint="@string/mlToKm"
+            android:layout_gravity="center"
+            android:textColorHint="#AAA"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:autofillHints="" tools:targetApi="o"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <TextView
+            android:id="@+id/viewMlToKmValue"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/viewdrawable"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_marginTop="20dp">
+        </TextView>
+
+
+        <!--Just a note i love to include-->
+        <TextView
+            android:id="@+id/aboutJerry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/developedBy"
+            android:textSize="15sp"
+            android:fontFamily="cursive"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#b3afaf"
+            android:paddingStart="50dp"
+            android:paddingEnd="0dp"
+            android:lastBaselineToBottomHeight="12dp"
+            android:layout_marginTop="50dp"
+            tools:targetApi="p">
+        </TextView>
+
+    </LinearLayout>
+
+</ScrollView>
